@@ -39,7 +39,7 @@ For example, we want the service "Main" to be proxied. Therefore we enter the fo
 
 - Forward Hostname / IP: **<Hostname e.g. 'microservices.my-company.com'>**
 
-- Forward Port: **4039**
+- Forward Port: **3010**
 
 - Cache Assets: **Yes**
 
