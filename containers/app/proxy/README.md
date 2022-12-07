@@ -2,6 +2,10 @@
 
 Based on "NGinX Proxy Manager" at https://nginxproxymanager.com/
 
+## How to setup the Nginx Proxy Manager
+
+Based on "How to setup the Nginx Proxy Manager" at https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-setup-the-Nginx-Proxy-Manager-example
+
 ## Logging In
 
 When your docker container is running, connect to it on port 81 for the admin interface. Sometimes this can take a little bit because of the entropy of keys.
@@ -19,7 +23,6 @@ Password: changeme
 
 Immediately after logging in with this default user you will be asked to modify your details and change your password.
 
-## Configuration
+## How to setup a reverse proxy with the Proxy Manager
 
 Based on "How to setup the Nginx Proxy Manager" at https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-setup-the-Nginx-Proxy-Manager-example
-
