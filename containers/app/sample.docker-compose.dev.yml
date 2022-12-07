@@ -85,9 +85,9 @@ services:
     privileged: true
     restart: unless-stopped
     ports:
-      - "8080:80"
-      - "8081:81"
-      - "8443:443"
+      - "8080:80" # Public HTTP Port
+      - "8081:81" # Admin Web Port
+      - "8443:443" # Public HTTPS Port
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
