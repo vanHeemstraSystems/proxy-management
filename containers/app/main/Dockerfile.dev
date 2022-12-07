@@ -29,7 +29,7 @@ COPY next.config.js ./next.config.js
 # COPY . ./
 
 # expose port
-EXPOSE 4039
+EXPOSE 3010
 
 # start app
 CMD ["yarn", "dev"]
