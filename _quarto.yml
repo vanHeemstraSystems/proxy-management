@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "NGinX Proxy Management"
+  title: "Proxy Management"
   navbar:
     left:
       - href: index.qmd
