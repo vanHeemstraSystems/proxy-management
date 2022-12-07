@@ -145,7 +145,33 @@ services:
       - "8080:8080"
     depends_on:
       - "main"
-      
+
+  proxy:
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile.dev
+      args: # from env_file
+        UNIQUE_NAMESPACE: ${UNIQUE_NAMESPACE}
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
+        PROXY_USER: ${PROXY_USER}
+        PROXY_PASSWORD: ${PROXY_PASSWORD}
+        PROXY_FQDN: ${PROXY_FQDN}
+        PROXY_PORT: ${PROXY_PORT}    
+    env_file:
+      - .env     
+    container_name: ${UNIQUE_NAMESPACE}-proxy-dev
+    security_opt:
+      - no-new-privileges:true
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+      - "8081:81"
+      - "8443:443"
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+
 networks:
   proxy:
     external: true
