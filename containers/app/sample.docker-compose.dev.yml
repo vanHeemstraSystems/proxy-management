@@ -142,7 +142,7 @@ services:
       - no-new-privileges:true
     privileged: true  
     ports:
-      - "8080:8080"
+      - "7080:8080"
     depends_on:
       - "main"
 
