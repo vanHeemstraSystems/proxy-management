@@ -142,9 +142,35 @@ services:
       - no-new-privileges:true
     privileged: true
     ports:
-      - "80:80"
+      - "70:80"
     depends_on:
       - "main"
+      
+  proxy:
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile.dev
+      args: # from env_file
+        UNIQUE_NAMESPACE: ${UNIQUE_NAMESPACE}
+        IMAGE_REPOSITORY: ${IMAGE_REPOSITORY}
+        PROXY_USER: ${PROXY_USER}
+        PROXY_PASSWORD: ${PROXY_PASSWORD}
+        PROXY_FQDN: ${PROXY_FQDN}
+        PROXY_PORT: ${PROXY_PORT}    
+    env_file:
+      - .env     
+    container_name: ${UNIQUE_NAMESPACE}-proxy-dev
+    security_opt:
+      - no-new-privileges:true
+    privileged: true
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "81:81"
+      - "443:443"
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
 
 networks:
   proxy:
