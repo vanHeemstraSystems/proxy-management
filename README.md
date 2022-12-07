@@ -3,9 +3,9 @@ proxy-management
 
 A template for a microservice.
 
-Can be read as "Proxy Management"
+Can be read as "Proxy Management" at https://app.gitbook.com/???/????/
 
-Can be browsed as "Proxy Management"
+Can be browsed as "Proxy Management" at https://vanheemstrasystems.github.io/proxy-management/
 
 Documentation of this repository is automatically done with Quarto using GitHub Actions
 
