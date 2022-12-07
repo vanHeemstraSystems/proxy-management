@@ -55,4 +55,29 @@ As soon as the save button is clicked, the Nginx Proxy Manager activates the rev
 
 Based on "How to setup the Nginx Proxy Manager" at https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-setup-the-Nginx-Proxy-Manager-example
 
+The Nginx Proxy Manager also allows for custom locations to be easily configured.
 
+For example, sub-folder forwarding can be easily setup by mapping a location’s subfolder to a path on the backend server.
+
+## Simple Nginx Proxy Manager Tutorial
+
+Based on "How to setup the Nginx Proxy Manager" at https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-setup-the-Nginx-Proxy-Manager-example
+
+This Nginx Proxy Manager tutorial shows you the easiest way to get up and running with the Proxy Manager, along with the steps to take to quickly setup Nginx as a reverse proxy. However, the features demonstrated here are merely a small subset of the Nginx Proxy Manager’s capabilities.
+
+Nginx Proxy Manager features
+
+Other Nginx Proxy Manager features include:
+
+- Virtual host management
+- Ability to cache assets
+- Blocking of common exploits
+- Websocket support
+- Access list configuration
+- SSL and HTTP/2 support
+- Host redirection with HTTP code configuration
+- TCP and UDP stream support
+- User management
+- Nginx Proxy Manager log auditing
+
+Nginx is an extremely powerful web server and reverse proxy. The Nginx Proxy Manager is full-featured tool that helps to lower the barriers to entry for users who are interested in learning and working with the Nginx server.
