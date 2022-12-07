@@ -75,7 +75,8 @@ services:
         PROXY_USER: ${PROXY_USER}
         PROXY_PASSWORD: ${PROXY_PASSWORD}
         PROXY_FQDN: ${PROXY_FQDN}
-        PROXY_PORT: ${PROXY_PORT}    
+        PROXY_PORT: ${PROXY_PORT}
+        DISABLE_IPV6: ${DISABLE_IPV6}
     env_file:
       - .env     
     container_name: ${UNIQUE_NAMESPACE}-proxy-dev
