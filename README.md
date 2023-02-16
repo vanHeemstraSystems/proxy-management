@@ -1,2 +1,0 @@
-# proxy-management
-Proxy Management
