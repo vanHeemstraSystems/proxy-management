@@ -17,6 +17,8 @@ Based on "Quarto Web" at https://github.com/quarto-dev/quarto-web and https://qu
 
 Based on "Creating your personal website using Quarto" at https://ucsb-meds.github.io/creating-quarto-websites/
 
+Based on "NGRok" at https://github.vanHeemstraSystems/ngrok
+
 Create yarn.lock file as follows:
 
 ```
